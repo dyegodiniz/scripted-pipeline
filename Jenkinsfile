@@ -1,9 +1,14 @@
 #!/usr/bin/env groovy
 
-node {
-    agent any
+// node {
+//     agent any
 
-    stage('Build'){
-        sh echo test
+//     stage('Build'){
+//         sh echo test
+//     }
+// }
+
+node {
+    stage('test') {
+        echo 'hello'
     }
-}
