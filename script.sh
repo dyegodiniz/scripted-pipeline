@@ -18,5 +18,5 @@ JENKINS_ADDRESS="http://192.168.1.174:8081"
 
 
 # Pass parameters with --data option
-curl http://${BASIC_AUTH}@${JENKINS_ADDRESS}/job/my_pipeline/buildWithParameters \
+curl http://${BASIC_AUTH}@${JENKINS_ADDRESS}/job/test-scripted/buildWithParameters \
   --data param1=123 --data param2="git-repo"
