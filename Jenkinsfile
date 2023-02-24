@@ -9,7 +9,13 @@
 // }
 
 node {
+    stage('build') {
+        echo 'hello'
+    }
     stage('test') {
+        echo 'hello'
+    }
+    stage('deploy') {
         echo 'hello'
     }
 }
