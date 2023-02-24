@@ -14,8 +14,10 @@ JENKINS_USER_API_TOKEN=11bb4b85a8fe21b785aad90dcbfdff518d
 BASIC_AUTH=${JENKINS_USER}:$JENKINS_USER_API_TOKEN
 
 # Obtained from URL without any protocol
-JENKINS_ADDRESS="http://192.168.1.174:8081"
+JENKINS_ADDRESS="192.168.1.174:8081"
 
 
 # Pass parameters with --data option
-curl http://admin:11bb4b85a8fe21b785aad90dcbfdff518d@http://192.168.1.174:8081/job/test-scripted/buildWithParameters --data param1=123 --data param2="git-repo"
+#curl http://admin:11bb4b85a8fe21b785aad90dcbfdff518d@http://192.168.1.174:8081/job/test-scripted/buildWithParameters --data param1=123 --data param2="git-repo"
+curl http://${BASIC_AUTH}@${JENKINS_ADDRESS}/job/my_pipeline/buildWithParameters \
+  --data param1=123 --data param2="git-repo"
