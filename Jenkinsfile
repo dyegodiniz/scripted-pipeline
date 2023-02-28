@@ -10,17 +10,8 @@
 
 def call(Map config) {
     node {
-
-    stage('build') {
-        echo 'hello'
+        sh 'echo test'
     }
-    stage('test') {
-        echo 'hello'
-    }
-    stage('deploy') {
-        echo 'hello'
-    }
-}
 
 
 }
