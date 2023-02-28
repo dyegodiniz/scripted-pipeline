@@ -5,7 +5,7 @@
 node {
     stage('build') {
         echo 'hello'
-        ls -l
+        sh 'ls -l'
     }
     stage('test') {
         echo 'hello'
