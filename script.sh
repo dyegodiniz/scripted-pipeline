@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# tutorial para usar a api do jenkins https://narenchejara.medium.com/trigger-jenkins-job-remotely-using-jenkins-api-20973618a493
+
 git add .
 
 git commit -m "commit test"

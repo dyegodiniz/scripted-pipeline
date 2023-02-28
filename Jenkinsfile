@@ -19,5 +19,8 @@ node {
     stage('deploy') {
         echo 'hello'
     }
+    stage('post deploy') {
+        echo 'hello'
+    }
 }
 
