@@ -8,7 +8,8 @@
 //     }
 // }
 
-node {
+def call(Map config) {
+    node {
 
     stage('build') {
         echo 'hello'
@@ -20,4 +21,11 @@ node {
         echo 'hello'
     }
 }
+
+
+}
+
+
+
+
 
