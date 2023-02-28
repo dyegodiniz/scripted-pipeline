@@ -1,19 +1,18 @@
 #!/usr/bin/env groovy
 
-// node { 
-//     agent any
 
-//     stage('Build'){
-//         sh echo test
-//     }
-// }
 
-def call(Map config) {
-    node {
-        sh 'echo test'
+node {
+    stage('build') {
+        echo 'hello'
+        echo "hello 1"
     }
-
-
+    stage('test') {
+        echo 'hello'
+    }
+    stage('deploy') {
+        echo 'hello'
+    }
 }
 
 
