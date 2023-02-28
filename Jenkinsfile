@@ -1,6 +1,6 @@
-#!/usr/bin/env groovy
 
-// node {
+
+// node { #!/usr/bin/env groovy
 //     agent any
 
 //     stage('Build'){
