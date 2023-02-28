@@ -6,6 +6,7 @@ node {
     stage('build') {
         echo 'hello'
         sh 'ls -l'
+        sh 'pwd'
     }
     stage('test') {
         echo 'hello'
