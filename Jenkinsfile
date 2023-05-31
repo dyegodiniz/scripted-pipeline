@@ -3,6 +3,11 @@
 
 
 node {
+
+    parameters {
+        string(name: 'VAR1', defaultvalue: 'VAR1')
+    }
+
     stage('build') {
         echo 'hello'
         sh 'ls -l'
@@ -19,6 +24,8 @@ node {
         println(this)
         println("valor do env:")
         println(env)
+        println("valor das env vars:")
+        sh 'env'
 
     }
 }
