@@ -4,11 +4,11 @@
 
 node {
 
-    properties([
-        parameters ([
-            string(name: 'VAR1', defaultvalue: 'VAR1')
-        ])
-    ])
+    // properties([
+    //     parameters ([
+    //         string(name: 'VAR1', defaultvalue: 'VAR1')
+    //     ])
+    // ])
 
     
 
