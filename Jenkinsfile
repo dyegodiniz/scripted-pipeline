@@ -7,7 +7,6 @@ node {
         echo 'hello'
         sh 'ls -l'
         sh 'pwd'
-        sh 'ls -lhtra'
     }
     stage('test') {
         echo 'hello'
