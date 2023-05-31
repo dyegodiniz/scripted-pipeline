@@ -30,6 +30,8 @@ node {
         println(env)
         println("valor das env vars:")
         sh 'env'
+        println("valor de params:")
+        println(params)
 
     }
 }
