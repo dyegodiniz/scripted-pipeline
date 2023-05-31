@@ -34,6 +34,9 @@ node {
         println(params)
         println("print do env.WORKSPACE")
         println(env.WORKSPACE)
+        
+        println("print do env.JENKINS_VERSION")
+        println(env.JENKINS_VERSION)
 
     }
 }
