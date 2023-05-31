@@ -19,7 +19,12 @@ node {
     }
     stage('test') {
         echo 'hello'
-        sh 'sldfkjsdlkfj'
+        retry(3) {
+            sleep 3
+            sh 'sldfkjsdlkfj'
+
+        }
+        
     }
     stage('deploy') {
         echo 'hello'
