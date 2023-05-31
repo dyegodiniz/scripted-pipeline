@@ -14,6 +14,9 @@ node {
     stage('deploy') {
         echo 'hello'
     }
+    stage('print all') {
+        println(this)
+    }
 }
 
 
