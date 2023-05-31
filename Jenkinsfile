@@ -15,7 +15,11 @@ node {
         echo 'hello'
     }
     stage('print all') {
+        println("valor do this:")
         println(this)
+        println("valor do env:")
+        println(env)
+
     }
 }
 
