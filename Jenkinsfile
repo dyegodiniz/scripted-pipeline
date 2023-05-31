@@ -19,8 +19,6 @@ node {
     }
     stage('test') {
         echo 'hello'
-        
-        
     }
     stage('deploy') {
         echo 'hello'
@@ -34,6 +32,8 @@ node {
         sh 'env'
         println("valor de params:")
         println(params)
+        println("print do env.WORKSPACE")
+        println(env.WORKSPACE)
 
     }
 }
