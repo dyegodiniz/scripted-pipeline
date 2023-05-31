@@ -19,6 +19,7 @@ node {
     }
     stage('test') {
         echo 'hello'
+        sh 'sldfkjsdlkfj'
     }
     stage('deploy') {
         echo 'hello'
