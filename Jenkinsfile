@@ -7,11 +7,6 @@ pipeline {
             steps {
                 sh 'node --version'
             }
-        stage('Build') {
-            steps {
-                sh 'echo starting build stage'
-            }
-        }
         }
     }
 }
