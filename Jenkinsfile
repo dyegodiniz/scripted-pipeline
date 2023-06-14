@@ -1,51 +1,12 @@
-#!/usr/bin/env groovy
-
-
-
-node {
-
-    // properties([
-    //     parameters ([
-    //         string(name: 'VAR1', defaultvalue: 'VAR1')
-    //     ])
-    // ])
-
-    
-
-    stage('build') {
-        echo 'hello'
-        sh 'ls -l'
-        sh 'pwd'
+pipeline {
+    agent {
+        docker { image 'node:18.16.0-alpine'}
     }
-    stage('test') {
-        echo 'hello'
-    }
-    stage('deploy') {
-        echo 'hello'
-    }
-    stage('print all') {
-        println("valor do this:")
-        println(this)
-        
-        println("valor do env:")
-        println(env)
-
-        println("valor das env vars:")
-        sh 'env'
-        
-        println("valor de params:")
-        println(params)
-        
-        println("print do env.WORKSPACE")
-        println(env.WORKSPACE)
-        
-        println("print do env.JENKINS_VERSION")
-        println(env.JENKINS_VERSION)
-
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+            }
+        }
     }
 }
-
-
-
-
-
