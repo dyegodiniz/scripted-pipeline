@@ -26,4 +26,4 @@ git push origin master
 #curl http://admin:11bb4b85a8fe21b785aad90dcbfdff518d@http://192.168.1.174:8081/job/test-scripted/buildWithParameters --data param1=123 --data param2="git-repo"
 #curl http://${BASIC_AUTH}@${JENKINS_ADDRESS}/job/test-scripted/buildWithParameters
 echo "============================================================= rodando pipeline no jenkins"
-curl -u admin:11f36257512523e8c7ee2d314d957d8169 http://192.168.1.174:8081/job/test-scripted/build?token=My-token
+curl -u admin:11bd7fa452897ac616e2f74e6fdac6c625 http://localhost:8080/job/test-scripted/build?token=My-token
