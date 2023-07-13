@@ -12,6 +12,7 @@ echo "============================================================= push para re
 git push origin master
 
 
+
 #JENKINS_USER=admin
 #JENKINS_USER_API_TOKEN=11bb4b85a8fe21b785aad90dcbfdff518d
 
