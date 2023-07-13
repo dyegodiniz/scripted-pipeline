@@ -1,8 +1,8 @@
 node {
     stage ('Example') {
-        sh 'echo hello world'
+        println("estágio de Example")
     }
     stage ('PrintiEnv') {
-        sh 'env'
+        println("estágio de printienv")
     }
 }
